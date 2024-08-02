@@ -1,10 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 import time
 
 pesquisa = input("Digite a pesquisa: ")
 
+
+# Caminho para o ChromeDriver manualmente baixado
+chrome_driver_path = "D:\Estudo\Outros\Python\Random\automacao\chromedriverWin64\chromedriver.exe"
+
+chrome_options = Options()
+chrome_options.add_argument("--start-maximized")  # Inicia o Chrome maximizado
+chrome_service = Service(chrome_driver_path)
+        # Inicializando o driver do Chrome
 # Configuração do driver
 driver = webdriver.Chrome()
 driver.get("https://www.google.com")
