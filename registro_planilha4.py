@@ -16,7 +16,7 @@ try:
         dominios = df[0].tolist()[:10]  # Lendo os primeiros 10 domínios
 
         # Caminho para o ChromeDriver manualmente baixado
-        chrome_driver_path = "D:\Estudo\Outros\Python\Random\automacao\chromedriverWin64\chromedriver.exe"
+        chrome_driver_path = "D:\Programacao\Python\Automacoes_Python\chromedriverWin64\chromedriver.exe"
         
         chrome_options = Options()
         chrome_options.add_argument("--start-maximized")  # Inicia o Chrome maximizado
