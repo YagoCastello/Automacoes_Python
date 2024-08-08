@@ -1,0 +1,10 @@
+import pyautogui
+pyautogui.press('Win')
+pyautogui.write('notepad')
+pyautogui.press('Enter')
+pyautogui.write('Ola')
+pyautogui.press('Enter')
+pyautogui.write('Mundo!')
+pyautogui.hotkey('ctrl','s')
+pyautogui.write('teste.txt')
+pyautogui.press('Enter')
